@@ -24,8 +24,10 @@ export class CanvasComponent implements AfterViewInit {
     // let edge : Edge = new Edge(node1._center,node2._center);
     // edge.draw(context);
 
-    let graph : Graph = new Graph();
-    graph.draw(context);
-  }
+    let graph : Graph = new Graph(context);
 
+    graph.draw();
+    graph.TraverseGraph();
+
+  }
 }
